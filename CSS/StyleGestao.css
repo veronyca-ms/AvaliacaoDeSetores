@@ -1,0 +1,226 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    height: 50px;
+    background-color:rgb(50, 0, 112);
+    color: #fff;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #282828;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 35px; /* Reduzido o tamanho do logo para dispositivos móveis */
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 16px; /* Reduzido o tamanho do texto do logo para dispositivos móveis */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px; /* Reduzido o espaçamento entre os itens do menu para dispositivos móveis */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    background-color: #6600ff;
+    color: #fff;
+    padding: 40px; /* Reduzido o padding para dispositivos móveis */
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 24px; /* Reduzido o tamanho do título da banner para dispositivos móveis */
+    margin-bottom: 15px; /* Reduzido a margem inferior para dispositivos móveis */
+}
+
+.btn {
+    background-color: #0040ff;
+    color: #fff;
+    padding: 8px 16px; /* Reduzido o padding do botão para dispositivos móveis */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px; /* Reduzido o tamanho da fonte do botão para dispositivos móveis */
+}
+
+.btn:hover {
+    background-color: #002080;
+}
+
+.about {
+    background-color: #fff;
+    padding: 30px; /* Reduzido o padding para dispositivos móveis */
+}
+
+.about h2 {
+    font-size: 22px; /* Reduzido o tamanho do título da seção "Sobre" para dispositivos móveis */
+    margin-bottom: 15px; /* Reduzido a margem inferior para dispositivos móveis */
+}
+
+.footer {
+    background-color: #2d183e;
+    color: #fff;
+    padding: 15px; /* Reduzido o padding do rodapé para dispositivos móveis */
+    text-align: center;
+}
+
+/* Estilo para a div de setor */
+.setor {
+    display: flex;
+    justify-content: center; /* Centraliza as caixas horizontalmente */
+}
+
+/* Estilo para cada caixa de setor */
+.avaliacoes {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    height: 120px;
+    text-align: center;
+  color:white;
+    background-color: rgb(50, 0, 112);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  min-width: 14rem;
+  min-height: 5rem;
+}
+
+.avaliacoes a {
+  margin-top: 1rem;
+}
+
+/* Estilo para o link de 'Ver os resultados' */
+.item a {
+  display: inline-block;
+  background-color: rgb(153, 10, 219);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Estilo de hover para o link 'Ver os resultados' */
+.item a:hover {
+  transition: background-color 0.3s ease;
+  background-color: #c019d7;;
+}
+
+.item a:active{
+  background-color:#cb20bd;
+  
+}
+
+b {
+    font-size: 25px;
+}
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0 10px; /* Reduzido o padding para dispositivos móveis */
+    }
+
+    .logo img {
+        max-width: 30px; /* Reduzido o tamanho do logo para dispositivos móveis */
+    }
+
+    .logo h1 {
+        font-size: 14px; /* Reduzido o tamanho do texto do logo para dispositivos móveis */
+    }
+
+    nav ul li {
+        margin-left: 5px; /* Reduzido o espaçamento entre os itens do menu para dispositivos móveis */
+    }
+
+    .banner {
+        padding: 20px; /* Reduzido o padding para dispositivos móveis */
+    }
+
+    .banner h2 {
+        font-size: 20px; /* Reduzido o tamanho do título da banner para dispositivos móveis */
+        margin-bottom: 10px; /* Reduzido a margem inferior para dispositivos móveis */
+    }
+
+    .btn {
+        padding: 6px 12px; /* Reduzido o padding do botão para dispositivos móveis */
+        font-size: 12px; /* Reduzido o tamanho da fonte do botão para dispositivos móveis */
+    }
+
+    .about {
+        padding: 20px; /* Reduzido o padding para dispositivos móveis */
+    }
+
+    .about h2 {
+        font-size: 18px; /* Reduzido o tamanho do título da seção "Sobre" para dispositivos móveis */
+        margin-bottom: 10px; /* Reduzido a margem inferior para dispositivos móveis */
+    }
+
+    .footer {
+        padding: 10px; /* Reduzido o padding do rodapé para dispositivos móveis */
+    }
+
+    .avaliacoes {
+        width: 180px; /* Reduzido o tamanho da caixa de setor para dispositivos móveis */
+        padding: 15px; /* Reduzido o padding para dispositivos móveis */
+        margin: 15px; /* Reduzido a margem para dispositivos móveis */
+    }
+
+    .avaliacoes a {
+        padding: 3px 8px; /* Reduzido o padding do link "Ver os resultados" para dispositivos móveis */
+    }
+}
+
+.cx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+  justify-items: center;
+  margin: 25px auto;
+  width: 95%;
+}
+
+.item {
+  background-color: rgb(50, 0, 112);
+  min-width: 100%;
+  min-height: 100px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px;
+  color:white;
+  border-radius:15px;
+
+}

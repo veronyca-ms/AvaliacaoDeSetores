@@ -1,0 +1,101 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+    font-family: sans-serif;
+}
+
+.mt_ruim {
+    background-color: rgb(255, 84, 84);
+    color: black;
+    font-family: sans-serif;
+}
+
+.ruim {
+    background-color: rgb(255, 142, 72);
+    color: black;
+    font-family: sans-serif;
+}
+
+.bom {
+    background-color: rgb(202, 255, 87);
+    color: black;
+    font-family: sans-serif;
+}
+
+.mt_bom {
+    background-color: rgb(84, 255, 84);
+    color: black;
+    font-family: sans-serif;
+}
+
+.mt_ruim_r {
+    background-color: rgb(255, 84, 84);
+    color: black;
+    font-family: sans-serif;
+}
+
+.ruim_r {
+    background-color: rgb(255, 142, 72);
+    color: black;
+    font-family: sans-serif;
+}
+
+.bom_r {
+    background-color: rgb(202, 255, 87);
+    color: black;
+    font-family: sans-serif;
+}
+
+.mt_bom_r {
+    background-color: rgb(84, 255, 84);
+    color: black;
+    font-family: sans-serif;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+button.disabled {
+    background-color: #ccc; /* Cor de fundo para botões desabilitados */
+    cursor: not-allowed; /* Cursor não permitido quando desabilitado */
+}
+
+button:hover:not(.disabled) {
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse (exceto quando desabilitado) */
+}
+
+.mt_ruim_r button {
+    background-color: rgb(255, 84, 84);
+}
+
+.ruim_r button {
+    background-color: rgb(255, 142, 72);
+}
+
+.bom_r button {
+    background-color: rgb(202, 255, 87);
+}
+
+.mt_bom_r button {
+    background-color: rgb(84, 255, 84);
+}
+

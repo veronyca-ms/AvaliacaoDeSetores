@@ -1,0 +1,189 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2d183e;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  /*background-color: #fff;*/
+  backdrop-filter: blur(9px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  max-width: 150px;
+}
+
+form {
+  /* Outros estilos existentes */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo na horizontal */
+  justify-content: center; /* Centraliza o conteúdo na vertical */
+  
+}
+
+form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bg {
+  animation:slide 10s ease-in-out infinite alternate;
+  background-image: linear-gradient(-65deg, rgb(94, 27, 177) 50%, rgb(50, 0, 112) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.6;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:12s;
+}
+
+.bg3 {
+  animation-duration:24s;
+}
+
+
+@keyframes slide {
+  0% {
+      transform:translateX(-25%);
+  }
+  100% {
+      transform:translateX(25%);
+  }
+  }
+
+
+.input-container {
+  position: relative;
+  margin: 20px auto;
+  width: 90%;
+  font-size: 20px;
+}
+
+.input-container input[type="text"],input[type="password"] {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -24px;
+  font-size: 16px;
+  color: #8f8f8f;
+}
+
+.input-container input[type="password"]:focus ~ .label,
+.input-container input[type="password"]:valid ~ .label {
+  top: -24px;
+  font-size: 16px;
+  color: #8f8f8f;
+}
+
+
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container input[type="password"]:focus ~ .underline,
+.input-container input[type="password"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 8px 20px; /* Reduzindo o padding do botão */
+  font-size: 16px; /* Diminuindo o tamanho da fonte */
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  max-width: 150px; /* Definindo um valor mais adequado para max-width */
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}

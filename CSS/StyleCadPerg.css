@@ -1,0 +1,163 @@
+/* Estilos adicionais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    /* background-color: #2d183e; */
+    color: #fff;
+
+}
+
+.container {
+    max-width: 80%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    /* background-color: #1a0d28; */
+    backdrop-filter: blur(10px);
+
+}
+
+input[type="text"], input[type="password"] {
+    height: 40px;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    height: 40px; /*altura de opções*/
+    width: 100%; /*largura das opções */
+    margin-top: 2px;/*distancia entre digite aqui e  opções*/
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.botao {
+  font-size: 16px;
+  height: 30px;/*autura do botao*/
+  width: 80px;/*largura do botao*/
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #6600ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 4px 2px rgba(150, 0, 255, 0.7);
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #bb00ff;
+  color: #fff;
+  margin: 0;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #0040ff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 255, 0.7);
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.title_cadastro{
+  text-align:center;
+}
+
+header {
+    height: 50px;
+    background-color: #2d183e;
+    color: #fff;
+    padding: 0 40px; /* Reduzido o padding para dispositivos móveis */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #282828;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px; /* Reduzido o espaçamento entre os itens do menu para dispositivos móveis */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.bg {
+  animation:slide 10s ease-in-out infinite alternate;
+  background-image: linear-gradient(-65deg, rgb(94, 27, 177) 50%, rgb(50, 0, 112) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.6;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:12s;
+}
+
+.bg3 {
+  animation-duration:24s;
+}
+
+
+@keyframes slide {
+  0% {
+      transform:translateX(-25%);
+  }
+  100% {
+      transform:translateX(25%);
+  }
+  }
+
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration:none;  
+}
+div{
+  
+}

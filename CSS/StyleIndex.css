@@ -1,0 +1,106 @@
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o body e HTML */
+body, html {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: rgb(36,0,81);
+  background: linear-gradient(90deg, rgba(36,0,81,1) 0%, rgba(151,100,214,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.button-container {
+  opacity: 0;
+  animation: fadeInUp 1s ease 1s forwards;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+
